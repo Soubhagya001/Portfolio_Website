@@ -1,0 +1,25 @@
+- [x] Remove inline <style> block from src/website.html
+- [x] Remove inline <script> block from src/website.html
+- [x] Add <script src="scripts.js"></script> before </body> in src/website.html
+- [x] Add @keyframes typing to src/styles.css
+- [x] Remove dynamic style addition from src/scripts.js
+- [x] Update Hero Section: Add background image with dark gradient overlay
+- [x] Update Hero Section: Center name and role
+- [x] Update Hero Section: Convert contact links to round icon buttons
+- [x] Update Hero Section: Add 1-line tagline
+- [x] Update About Me: Trim wording to be short and crisp
+- [x] Update Technical Expertise: Remove redundant skills (Problem Solving, Debugging)
+- [x] Update Technical Expertise: Add icons/logos for technologies
+- [x] Update Technical Expertise: Reorder categories (Backend → Databases → Programming Languages → Web Tech → Tools)
+- [x] Update Featured Projects: Convert to card format with screenshots/placeholders
+- [x] Update Featured Projects: Add tech stack tags
+- [x] Update Featured Projects: Add GitHub/Demo buttons
+- [x] Update Featured Projects: Add one personal project
+- [x] Update Certifications: Format dates consistently
+- [x] Update Certifications: Add logos for issuers
+- [x] Update Contact Section: Replace text links with icons
+- [x] Update Contact Section: Add subtle gradient background
+- [x] Add Design Polish: Soft dividers between sections
+- [x] Add Design Polish: Hover animations on cards/tags/buttons
+- [x] Add Design Polish: Consistent text sizing
+- [ ] Test all changes for responsiveness and functionality
