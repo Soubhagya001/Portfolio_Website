@@ -1,347 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
+    <title>Soubhagya Ranjan Hati - Backend Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="background"></div>
+    <div class="grain-overlay"></div>
     <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <div class="nav-content">
-            <a href="#" class="logo">DEV.PORTFOLIO</a>
+            <a href="#" class="logo">
+                <span class="logo-text">SRH</span>
+                <span class="logo-dot"></span>
+            </a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#certificates">Certificates</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
     <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
         <div class="hero-content">
-            <div class="experience-badge">B.Tech Computer Science & Engineering (2025)</div>
-            <h1>SOUBHAGYA RANJAN HATI</h1>
-            <h2>Backend Developer | Java Full Stack Developer</h2>
-            <p class="tagline">"Java Backend Developer | Building Scalable & Smart Systems"</p>
-            <div class="contact-icons">
-                <a href="tel:+918895807053" class="icon-btn" title="Call"><i class="fas fa-phone"></i></a>
-                <a href="mailto:soubhagyaranjanhati@gmail.com" class="icon-btn" title="Email"><i
-                        class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/soubhagya-ranjan-hati/" class="icon-btn" title="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/Soubhagya001" class="icon-btn" title="GitHub"><i
-                        class="fab fa-github"></i></a>
+            <div class="hero-label fade-in-up" style="animation-delay: 0.1s">
+                <span class="label-dot"></span>
+                Available for Opportunities
             </div>
-            <a href="#projects" class="cta-button">View My Work</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="animate-in">
-            <h2 class="section-title">About Me</h2>
-            <p
-                style="font-size: 1.2rem; line-height: 1.8; color: #ccc; text-align: center; max-width: 800px; margin: 0 auto;">
-                I am a Computer Science undergrad (B.Tech, 2025) specializing in Java Backend & Full Stack Development.
-                Skilled in Spring Boot, REST APIs, and database integration. Passionate about building scalable, secure
-                applications and excited to contribute to innovative backend solutions.
+            
+            <h1 class="hero-title fade-in-up" style="animation-delay: 0.2s">
+                <span class="title-line">Soubhagya</span>
+                <span class="title-line">Ranjan Hati</span>
+            </h1>
+            
+            <div class="hero-subtitle fade-in-up" style="animation-delay: 0.3s">
+                <span class="subtitle-text">Backend Developer</span>
+                <span class="subtitle-divider">|</span>
+                <span class="subtitle-text">Java Full Stack Engineer</span>
+            </div>
+            
+            <p class="hero-description fade-in-up" style="animation-delay: 0.4s">
+                Crafting scalable backend systems with Spring Boot, REST APIs, and robust database architectures. 
+                Specialized in building secure, high-performance applications that power modern web experiences.
             </p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2 class="section-title animate-in">Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-card animate-in">
-                <div class="skill-category"><i class="fas fa-server"></i> Backend & Frameworks</div>
-                <div class="skill-list">
-                    <span class="skill-tag"><i class="fab fa-java"></i> Spring Boot</span>
-                    <span class="skill-tag"><i class="fab fa-java"></i> Spring Framework</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> JPA/Hibernate</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> JSP/Servlets</span>
-                    <span class="skill-tag"><i class="fas fa-exchange-alt"></i> REST APIs</span>
-                    <span class="skill-tag"><i class="fas fa-layer-group"></i> MVC Architecture</span>
-                </div>
-            </div>
-            <div class="skill-card animate-in">
-                <div class="skill-category"><i class="fas fa-database"></i> Databases</div>
-                <div class="skill-list">
-                    <span class="skill-tag"><i class="fas fa-database"></i> Oracle</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> PL/SQL</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> JDBC</span>
-                </div>
-            </div>
-            <div class="skill-card animate-in">
-                <div class="skill-category"><i class="fas fa-code"></i> Programming Languages</div>
-                <div class="skill-list">
-                    <span class="skill-tag"><i class="fab fa-java"></i> Java (OOP, Collections)</span>
-                    <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> C</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
-                    <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-                </div>
-            </div>
-            <div class="skill-card animate-in">
-                <div class="skill-category"><i class="fas fa-globe"></i> Web Technologies</div>
-                <div class="skill-list">
-                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
-                    <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                    <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
-                    <span class="skill-tag"><i class="fas fa-brain"></i> Data Structures</span>
-                    <span class="skill-tag"><i class="fas fa-cubes"></i> Design Patterns</span>
-                    <span class="skill-tag"><i class="fas fa-shield-alt"></i> SOLID Principles</span>
-                </div>
-            </div>
-            <div class="skill-card animate-in">
-                <div class="skill-category"><i class="fas fa-tools"></i> Tools & Platforms</div>
-                <div class="skill-list">
-                    <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                    <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
-                    <span class="skill-tag"><i class="fas fa-server"></i> Apache Tomcat</span>
-                    <span class="skill-tag"><i class="fas fa-flask"></i> JUnit</span>
-                    <span class="skill-tag"><i class="fas fa-cog"></i> Maven</span>
-                    <span class="skill-tag"><i class="fas fa-code"></i> Eclipse</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2 class="section-title animate-in">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card animate-in">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span>E-Commerce Store</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Online Electronics Store</h3>
-                    <p class="project-description">
-                        Built a full-stack online electronics store using JSP, Servlets, Oracle JDBC, and MVC
-                        architecture. Implemented user authentication, session handling, CRUD operations, and backend
-                        validation. Deployed application using Apache Tomcat, following best practices in debugging and
-                        scalability.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
-                        <span class="tech-tag"><i class="fas fa-code"></i> JSP</span>
-                        <span class="tech-tag"><i class="fas fa-server"></i> Servlets</span>
-                        <span class="tech-tag"><i class="fas fa-database"></i> Oracle JDBC</span>
-                        <span class="tech-tag"><i class="fas fa-layer-group"></i> MVC</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Soubhagya001" class="project-btn github-btn" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card animate-in">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-hospital"></i>
-                        <span>Hospital System</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Hospital Management System (Academic Project)</h3>
-                    <p class="project-description">
-                        Designed backend logic with secure SQL transactions for patient/doctor management. Wrote
-                        optimized queries to improve performance and ensure data integrity. Structured backend with
-                        modular, reusable components for maintainability.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag"><i class="fas fa-database"></i> SQL</span>
-                        <span class="tech-tag"><i class="fas fa-server"></i> Backend Logic</span>
-                        <span class="tech-tag"><i class="fas fa-cubes"></i> Modular Design</span>
-                        <span class="tech-tag"><i class="fas fa-tachometer-alt"></i> Performance</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Soubhagya001" class="project-btn github-btn" target="_blank"
-                            rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card animate-in">
-                <div class="project-image">
-                    <div class="project-placeholder">
-                        <i class="fas fa-tasks"></i>
-                        <span>ChatBot</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Fantasy AI Chatbot (Personal Project)</h3>
-                    <p class="project-description">
-                        A conversational AI chatbot designed to simulate fantasy-themed interactions. The chatbot allows
-                        users to engage in imaginative conversations, role-play scenarios, and explore story-driven
-                        dialogues. Built with natural language processing, it generates creative responses and adapts
-                        dynamically to user inputs, making interactions engaging and immersive.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag"><i class="fab fa-react"></i> JSX</span>
-                        <span class="tech-tag"><i class="fab fa-html5"></i> HTML</span>
-                        <span class="tech-tag"><i class="fas fa-robot"></i> AI Concepts</span>
-                        <span class="tech-tag"><i class="fas fa-comments"></i> Chatbot</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://github.com/Soubhagya001/fantasy-chatbot" class="project-btn github-btn"
-                            target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://soubhagya001.github.io/fantasy-chatbot/" class="project-btn demo-btn">
-                            <i class="fas fa-external-link-alt"></i> live link
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="certificates" class="section">
-        <h2 class="section-title animate-in">Certifications & Achievements</h2>
-        <div class="certificates-grid">
-            <div class="certificate-card animate-in">
-                <div class="cert-logo">
+            
+            <div class="hero-badges fade-in-up" style="animation-delay: 0.5s">
+                <div class="badge">
                     <i class="fas fa-graduation-cap"></i>
+                    <span>B.Tech CSE '25</span>
                 </div>
-                <div class="cert-content">
-                    <div class="cert-title">Java Full Stack Developer</div>
-                    <div class="cert-issuer"><i class="fas fa-university"></i> Naresh IT</div>
-                    <div class="cert-date"><i class="fas fa-calendar-alt"></i> Jan 2025</div>
+                <div class="badge">
+                    <i class="fab fa-java"></i>
+                    <span>Java Specialist</span>
                 </div>
-            </div>
-            <div class="certificate-card animate-in">
-                <div class="cert-logo">
-                    <i class="fab fa-python"></i>
-                </div>
-                <div class="cert-content">
-                    <div class="cert-title">Python Training</div>
-                    <div class="cert-issuer"><i class="fas fa-building"></i> Pythonsoft LLP</div>
-                    <div class="cert-date"><i class="fas fa-calendar-alt"></i> Dec 2024</div>
+                <div class="badge">
+                    <i class="fas fa-server"></i>
+                    <span>Spring Boot</span>
                 </div>
             </div>
-            <div class="certificate-card animate-in">
-                <div class="cert-logo">
-                    <i class="fab fa-python"></i>
-                </div>
-                <div class="cert-content">
-                    <div class="cert-title">Python Programming</div>
-                    <div class="cert-issuer"><i class="fas fa-graduation-cap"></i> Great Learning</div>
-                    <div class="cert-date"><i class="fas fa-calendar-alt"></i> Jun 2022</div>
-                </div>
+            
+            <div class="hero-actions fade-in-up" style="animation-delay: 0.6s">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
             </div>
-            <div class="certificate-card animate-in">
-                <div class="cert-logo">
-                    <i class="fab fa-google"></i>
-                </div>
-                <div class="cert-content">
-                    <div class="cert-title">Generative AI with Google Cloud</div>
-                    <div class="cert-issuer"><i class="fab fa-coursera"></i> Coursera</div>
-                    <div class="cert-date"><i class="fas fa-calendar-alt"></i> Feb 2025</div>
-                </div>
+            
+            <div class="hero-social fade-in-up" style="animation-delay: 0.7s">
+                <a href="https://github.com/Soubhagya001" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/soubhagya-ranjan-hati/" class="social-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:soubhagyaranjanhati@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918895807053" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
             </div>
-            <div class="certificate-card animate-in">
-                <div class="cert-logo">
-                    <i class="fas fa-robot"></i>
+        </div>
+        
+        <div class="scroll-indicator fade-in-up" style="animation-delay: 0.8s">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="section section-about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal" style="animation-delay: 0.1s">
+                    <p class="about-paragraph">
+                        I'm a Computer Science graduate (B.Tech, 2025) with a deep passion for backend development 
+                        and system architecture. My expertise lies in building robust, scalable applications using 
+                        Java, Spring Boot, and modern database technologies.
+                    </p>
+                    <p class="about-paragraph">
+                        With comprehensive training in full-stack development, I specialize in creating RESTful APIs, 
+                        implementing MVC architectures, and optimizing database performance. I'm driven by the challenge 
+                        of solving complex problems and building systems that make a real impact.
+                    </p>
                 </div>
-                <div class="cert-content">
-                    <div class="cert-title">AI Tools & ChatGPT</div>
-                    <div class="cert-issuer"><i class="fas fa-building"></i> be10X</div>
-                    <div class="cert-date"><i class="fas fa-calendar-alt"></i> Mar 2025</div>
+                
+                <div class="about-stats reveal" style="animation-delay: 0.2s">
+                    <div class="stat-card">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <h2 class="section-title animate-in">Let's Build Something Amazing</h2>
-        <div class="contact-content">
-            <div class="contact-info animate-in">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+    <section id="skills" class="section section-skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category reveal" style="animation-delay: 0.1s">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-title">Backend & Frameworks</h3>
                     </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <a href="mailto:soubhagyaranjanhati@gmail.com">soubhagyaranjanhati@gmail.com</a>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%; animation-delay: 0.2s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Framework</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%; animation-delay: 0.3s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JPA/Hibernate</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%; animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%; animation-delay: 0.5s"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+
+                <div class="skill-category reveal" style="animation-delay: 0.2s">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="skill-title">Databases</h3>
                     </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <a href="tel:+918895807053">+91 8895807053</a>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Oracle</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%; animation-delay: 0.2s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%; animation-delay: 0.3s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PL/SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%; animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JDBC</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%; animation-delay: 0.5s"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin-in"></i>
+
+                <div class="skill-category reveal" style="animation-delay: 0.3s">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3 class="skill-title">Programming</h3>
                     </div>
-                    <div class="contact-details">
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/soubhagya-ranjan-hati/" target="_blank"
-                            rel="noopener noreferrer">Connect with me</a>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%; animation-delay: 0.2s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%; animation-delay: 0.3s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%; animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C/C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%; animation-delay: 0.5s"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
+
+                <div class="skill-category reveal" style="animation-delay: 0.4s">
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="skill-title">Tools & DevOps</h3>
                     </div>
-                    <div class="contact-details">
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/Soubhagya001" target="_blank" rel="noopener noreferrer">View my
-                            code</a>
+                    <div class="skill-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">Maven</span>
+                        <span class="tag">Apache Tomcat</span>
+                        <span class="tag">JUnit</span>
+                        <span class="tag">Eclipse</span>
+                        <span class="tag">Data Structures</span>
+                        <span class="tag">Design Patterns</span>
                     </div>
                 </div>
             </div>
-            <div class="contact-form animate-in">
-                <form>
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+        </div>
+    </section>
+
+    <section id="projects" class="section section-projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card reveal" style="animation-delay: 0.1s">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Online Electronics Store</h3>
+                        <p class="project-description">
+                            Full-stack e-commerce platform with user authentication, session management, 
+                            and CRUD operations. Built with JSP, Servlets, and Oracle JDBC following 
+                            MVC architecture. Deployed on Apache Tomcat with comprehensive backend validation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">JSP/Servlets</span>
+                            <span class="tech-badge">Oracle JDBC</span>
+                            <span class="tech-badge">MVC</span>
+                            <span class="tech-badge">Apache Tomcat</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Soubhagya001" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" style="animation-delay: 0.2s">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="project-number">02</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hospital Management System</h3>
+                        <p class="project-description">
+                            Academic project focused on backend architecture for patient and doctor management. 
+                            Implemented secure SQL transactions, optimized queries for performance, 
+                            and structured modular components for maintainability.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">SQL</span>
+                            <span class="tech-badge">Backend Logic</span>
+                            <span class="tech-badge">Database Optimization</span>
+                            <span class="tech-badge">Modular Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Soubhagya001" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" style="animation-delay: 0.3s">
+                    <div class="project-visual">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-number">03</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Fantasy AI Chatbot</h3>
+                        <p class="project-description">
+                            Interactive conversational AI for fantasy-themed interactions and role-play scenarios. 
+                            Features natural language processing, dynamic response generation, 
+                            and adaptive dialogue flow for immersive user experiences.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML/CSS</span>
+                            <span class="tech-badge">AI Concepts</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Soubhagya001/fantasy-chatbot" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="https://soubhagya001.github.io/fantasy-chatbot/" class="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="section section-certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Achievements</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-card reveal" style="animation-delay: 0.1s">
+                    <div class="cert-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Java Full Stack Developer</h3>
+                        <p class="cert-issuer">Naresh IT</p>
+                        <p class="cert-date">January 2025</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card reveal" style="animation-delay: 0.2s">
+                    <div class="cert-badge">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Training</h3>
+                        <p class="cert-issuer">Pythonsoft LLP</p>
+                        <p class="cert-date">December 2024</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card reveal" style="animation-delay: 0.3s">
+                    <div class="cert-badge">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Programming</h3>
+                        <p class="cert-issuer">Great Learning</p>
+                        <p class="cert-date">June 2022</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card reveal" style="animation-delay: 0.4s">
+                    <div class="cert-badge">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Generative AI with Google Cloud</h3>
+                        <p class="cert-issuer">Coursera</p>
+                        <p class="cert-date">February 2025</p>
+                    </div>
+                </div>
+
+                <div class="certificate-card reveal" style="animation-delay: 0.5s">
+                    <div class="cert-badge">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">AI Tools & ChatGPT</h3>
+                        <p class="cert-issuer">be10X</p>
+                        <p class="cert-date">March 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    I'm currently looking for new opportunities. Whether you have a question 
+                    or just want to say hi, I'll try my best to get back to you!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info reveal" style="animation-delay: 0.1s">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:soubhagyaranjanhati@gmail.com">soubhagyaranjanhati@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+918895807053">+91 8895807053</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/soubhagya-ranjan-hati/" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Soubhagya001" target="_blank" rel="noopener noreferrer">View repositories</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" style="animation-delay: 0.2s" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/soubhagya-ranjan-hati/">LinkedIn</a>
-            <a href=" https://github.com/Soubhagya001">GitHub</a>
-
-
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Soubhagya Ranjan Hati. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Soubhagya001" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/soubhagya-ranjan-hati/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:soubhagyaranjanhati@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 Developer Portfolio.</p>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
-
 </html>
